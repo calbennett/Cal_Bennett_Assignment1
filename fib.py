@@ -1,11 +1,14 @@
 #fib.py
 from functools import lru_cache
 import timer
+memory = {}
 def fib(n:int) -> int:
     if n <= 1:
         return n
-    else:
-        return fib(n-2) + fib(n-1)
+    print(n)
+    if n not in memory:
+        memory[n] = fib(n-1) + fib(n-2)
+    return memory[n]
 
 if __name__ == "__main__":
-    fib(5)
+    print(fib(100))
