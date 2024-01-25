@@ -11,7 +11,7 @@ def fib(n:int) -> int:
 
 if __name__ == "__main__":
     t = timer.timer()
-    t._start('Starting...')
+    t._start('')
     print(fib(100))
     t._stop('Done')
     
