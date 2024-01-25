@@ -15,4 +15,4 @@ if __name__ == "__main__":
     print(fib(100))
     t._stop('')
     
-    print(t._elapse)
+    print('Elapsed time:', t._elapse, 'seconds')
